@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    /* background-color: aquamarine; */
+}
+
+
+i{
+    background-color: transparent;
+}
+
+/* navbar */
+#navbar {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: #FFFFFF; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+
+#navbar nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5px;
+    border-bottom: 1px solid lightgrey;    
+}
+
+.vertical_line{
+    height: 80px;
+    border: 1px solid lightgray;
+}
+
+.delivery_div{
+    line-height: 70%;
+}
+
+.searchInput{
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    width: 40vw;
+    background-color: #F8F8F8;
+    input{
+        border: none;
+        width: 90%;
+        background-color: #F8F8F8;
+    }
+    input:focus{
+        border: none;
+    }
+    input:active{
+        border: none;
+    }
+}
+
+
+
+/* paan corner */
+#paan_corner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* pet pharmacy and diaper section */
+#pet{
+    display: flex;
+    gap: 20px;
+    margin-left: 4.1%;
+}
+
+/* multiple items section */
+#items{
+    width: 93%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-left: 4.3%;
+}
+
+
+/* cards section */
+
+#myCard{
+    display: flex;
+    gap: 20px;
+
+    margin-left: 4.3%;
+    margin-top: 18px;
+    padding: 10px;
+    width: 90%;
+    overflow-x: scroll;
+    
+    .oneCard{
+
+        white-space: nowrap;
+        border: 1px solid #E8E8E8;
+        border-radius: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+        width: 290px !important;
+        padding: 15px;
+        .cards{
+            display: flex;
+            justify-content: center;
+        }
+    
+        .timer{
+            background-color: #F8F8F8;
+            width: 80px;
+            border-radius: 50px;
+            font-size: 1% !important;
+        }
+    
+        .weight{
+            margin: 5px;
+            margin-bottom: 15px;
+            color: #8379AB;
+        }
+    
+        .pricing{
+            display: flex;
+            justify-content: space-between;
+    
+            .add_btn{
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+        }
+    }
+}
+
+
+
+
+/* footer */
+
+footer{
+    margin-left: 4.3%;
+    margin-top: 70px;
+    .top_rows{
+        display: flex;
+        column-gap: 90px;
+        div{
+        flex-direction: column;
+            table{
+                margin-left: 0px !important;
+                margin-top: 20px;
+                tr{
+                    td{
+                        padding-right: 119px;
+                        padding-bottom: 5px;
+                        color: #696969;
+                    }
+                }
+            }
+            }
+    }
+    .bottom_row{
+        background-color: #FCFCFC;
+        color: #696969;
+        margin-right: 80px;
+        .top{
+            background-color: #FCFCFC;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+
+            #copyright{
+                width: 40%;
+                background-color: #FCFCFC;
+
+            }
+
+            .icons{
+                color: #1E3050;
+                background-color: #FCFCFC;
+
+                i{
+                    font-size: 30px;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}
